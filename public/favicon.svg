@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="rayosGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="#0b0f19" />
+  <rect x="2" y="2" width="96" height="96" rx="22" stroke="url(#rayosGrad)" stroke-width="2" stroke-dasharray="8 4" opacity="0.6"/>
+  <path d="M56 12L22 54H48L44 88L78 46H52L56 12Z" fill="url(#rayosGrad)" filter="url(#glow)"/>
+</svg>
